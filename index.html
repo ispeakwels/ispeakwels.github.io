@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ispeak</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container d-flex flex-column justify-content-center align-items-center text-center">
+
+    <!-- Logo -->
+    <img src="ispeak.jpg" onerror="src='ispeak.jpg'" alt="ispeak logo" class="logo img-fluid mb-1" />
+
+    <!-- Tagline -->
+    <div class="tagline-container w-100">
+      <h2 class="tagline mb-0 text-white py-1">Learn English</h2>
+    </div>
+
+    <!-- I WANT TO LEARN -->
+    <div class="container mb-5">
+      <h5 id="learnTitle" class="topic mt-3">I WANT TO LEARN</h5>
+
+      <!-- Row 1 -->
+      <div class="row align-items-start mt-3 fixed-row">
+        <div class="col-3">
+          <a href="verbs.html" class="circle-link"><div class="circle-letter A">A</div><br>Verbs</a>
+        </div>
+        <div class="col-3">
+          <a href="adverbs.html" class="circle-link"><div class="circle-letter B">B</div><br>Adverbs</a>
+        </div>
+        <div class="col-3">
+          <a href="vocabulary.html" class="circle-link"><div class="circle-letter C">C</div><br>Vocabulary</a>
+        </div>
+        <div class="col-3">
+          <a href="adjectives.html" class="circle-link"><div class="circle-letter D">D</div><br>Adjectives</a>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row align-items-start mt-3 fixed-row">
+        <div class="col-3">
+          <a href="sentence.html" class="circle-link"><div class="circle-letter E">E</div><br>Sentence</a>
+        </div>
+        <div class="col-3">
+          <a href="nouns.html" class="circle-link"><div class="circle-letter F">F</div><br>Nouns</a>
+        </div>
+        <div class="col-3">
+          <a href="grammar.html" class="circle-link"><div class="circle-letter G">G</div><br>Grammar</a>
+        </div>
+        <div class="col-3 see-more" id="seeMoreLearn">
+          <div class="circle">+</div><br>See More
+        </div>
+      </div>
+
+      <!-- Hidden Learn extras -->
+      <div id="extraLearn" class="hidden mt-3">
+        <div class="row fixed-row">
+          <div class="col-3"><a href="tenses.html" class="circle-link"><div class="circle-letter H">H</div><br>Tenses</a></div>
+          <div class="col-3"><a href="phrases.html" class="circle-link"><div class="circle-letter I">I</div><br>Phrases</a></div>
+          <div class="col-3"><a href="idioms.html" class="circle-link"><div class="circle-letter J">J</div><br>Idioms</a></div>
+          <div class="col-3"><a href="prepositions.html" class="circle-link"><div class="circle-letter K">K</div><br>Prepositions</a></div>
+        </div>
+      </div>
+
+      <!-- I WANT TO SOLVE -->
+      <h5 id="solveTitle" class="topic mt-5">I WANT TO SOLVE</h5>
+
+      <!-- Row 1 -->
+      <div class="row align-items-start mt-3 fixed-row">
+        <div class="col-3"><a href="quiz.html" class="circle-link"><div class="circle-num n1">1</div><br>Quiz</a></div>
+        <div class="col-3"><a href="fillblanks.html" class="circle-link"><div class="circle-num n2">2</div><br>Fill Blanks</a></div>
+        <div class="col-3"><a href="correctwords.html" class="circle-link"><div class="circle-num n3">3</div><br>Correct Words</a></div>
+        <div class="col-3"><a href="mcqs.html" class="circle-link"><div class="circle-num n4">4</div><br>MCQs</a></div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row align-items-start mt-3 fixed-row">
+        <div class="col-3"><a href="practice.html" class="circle-link"><div class="circle-num n5">5</div><br>Practice</a></div>
+        <div class="col-3"><a href="errors.html" class="circle-link"><div class="circle-num n6">6</div><br>Errors</a></div>
+        <div class="col-3"><a href="reading.html" class="circle-link"><div class="circle-num n7">7</div><br>Reading</a></div>
+        <div class="col-3 see-more" id="seeMoreSolve">
+          <div class="circle">+</div><br>See More
+        </div>
+      </div>
+
+      <!-- Hidden Solve extras -->
+      <div id="extraSolve" class="hidden mt-3 mb-5">
+        <div class="row fixed-row">
+          <div class="col-3"><a href="listening.html" class="circle-link"><div class="circle-num n8">8</div><br>Listening</a></div>
+          <div class="col-3"><a href="writing.html" class="circle-link"><div class="circle-num n9">9</div><br>Writing</a></div>
+          <div class="col-3"><a href="speaking.html" class="circle-link"><div class="circle-num n10">10</div><br>Speaking</a></div>
+          <div class="col-3"><a href="comprehension.html" class="circle-link"><div class="circle-num n11">11</div><br>Comprehension</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-auto">
+    <nav class="navbar navbar-dark bg-dark fixed-bottom small-footer">
+      <div class="container justify-content-center">
+        <a class="nav-link text-white px-3" href="#">Home</a>
+        <a class="nav-link text-white px-3" href="#">About</a>
+        <a class="nav-link text-white px-3" href="#">Contact</a>
+      </div>
+    </nav>
+  </footer>
+
+  <script>
+    function toggleSection(buttonId, sectionId, titleId) {
+      const btn = document.getElementById(buttonId);
+      const section = document.getElementById(sectionId);
+      const title = document.getElementById(titleId);
+
+      btn.addEventListener("click", () => {
+        section.classList.toggle("hidden");
+        const icon = btn.querySelector(".circle");
+        icon.textContent = section.classList.contains("hidden") ? "+" : "−";
+
+        if (!section.classList.contains("hidden")) {
+          const y = title.getBoundingClientRect().top + window.scrollY - 60;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      });
+    }
+
+    toggleSection("seeMoreLearn", "extraLearn", "learnTitle");
+    toggleSection("seeMoreSolve", "extraSolve", "solveTitle");
+  </script>
+</body>
+</html>
