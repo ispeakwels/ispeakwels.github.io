@@ -1,0 +1,117 @@
+/* ===== Reset + Base ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; scroll-behavior: smooth; overflow-x: hidden; }
+body { display: flex; flex-direction: column; background-color: #f8f9fa; font-family: Arial, sans-serif; }
+
+/* ===== MAIN LOGO ===== */
+.logo { width:790px;height:90px; }
+
+/* ===== Circles Layout ===== */
+.fixed-row { flex-wrap: nowrap !important; margin-top: 5px !important; margin-bottom: 5px !important; }
+.fixed-row > .col-3 { flex: 0 0 25% !important; max-width: 25% !important; display: flex; flex-direction: column; align-items: center; }
+
+/* Circle Links */
+.circle-link { text-decoration: none; color: inherit; display: inline-block; transition: transform .12s ease; font-size: 0.8rem; }
+.circle-link:hover { transform: translateY(-4px); }
+
+/* Circles */
+.circle-letter, .circle-num, .circle { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; font-weight: 700; margin: 0 auto 3px; transition: transform .18s ease, background-color .12s ease; }
+.circle-letter:hover, .circle-num:hover, .circle:hover { transform: scale(1.06); }
+
+/* Letter Colors */
+.n1 { background-color: #ff595e; }
+.n2 { background-color: #ffca3a; color: #222; }
+.n3 { background-color: #8ac926; }
+.n4 { background-color: #1982c4; }
+.n5 { background-color: #6a4c93; }
+.n6 { background-color: #ff7b00; }
+.n7 { background-color: #00afb9; }
+.n8 { background-color: #9b5de5; }
+.n9 { background-color: #7209b7; }
+.n10 { background-color: #f72585; }
+.n11 { background-color: #4361ee; }
+
+/* Number Colors */
+.n1 { background-color: #ff595e; }
+.n2 { background-color: #ffca3a; color: #222; }
+.n3 { background-color: #8ac926; }
+.n4 { background-color: #1982c4; }
+.n5 { background-color: #6a4c93; }
+.n6 { background-color: #ff7b00; }
+.n7 { background-color: #00afb9; }
+.n8 { background-color: #9b5de5; }
+.n9 { background-color: #7209b7; }
+.n10 { background-color: #f72585; }
+.n11 { background-color: #4361ee; }
+
+/* Fallback */
+.circle-letter:not([class*="A"]):not([class*="B"]):not([class*="C"]):not([class*="D"]),
+.circle-num:not([class*="n"]) { background-color: #577590; }
+
+/* "See More" Button */
+.circle { background-color: #007bff; cursor: pointer; color: #fff; }
+
+/* Hidden Items */
+.hidden { display: none; }
+
+.moving-container {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  background-color: #fff;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  animation: moveRightToLeft 10s linear infinite;
+}
+
+.moving-img {
+  height: 300px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+/* Keyframes */
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-280%); /* move far enough for 3 images */
+  }
+}
+
+
+
+/* Optional: slower animation on larger screens */
+@media (min-width: 1024px) {
+  .moving-img { animation-duration: 12s; }
+}
+
+
+
+/* Footer */
+footer { 
+  position: relative; 
+  z-index: 10; /* above moving image */
+
+}
+.navbar.small-footer { height: 40px; min-height: 40px; padding: 0 !important; }
+.nav-link { font-size: 1rem; line-height: 40px; padding: 0 10px; color: white; }
+.nav-link:hover { text-decoration: underline; }
+.light-violet-bg { background-color: #8A2BE2 !important; }
+
+/* ===== Responsive Fixes ===== */
+@media (max-width: 576px) {
+  .logo { max-width: 360px; }
+  .circle-letter, .circle-num, .circle { width: 45px; height: 45px; font-size: 1rem; }
+  .circle-link { font-size: 0.7rem; }
+  .logo-img { height: 140px; margin: 0 8px; }
+  .scroll-container { margin-bottom: 30px; }
+}
+
+/* ===== Grey Section Background ===== */
+.grey-section { background-color: #e0e0e0; box-shadow: 0 3px 10px rgba(0, 0, 0.1, 0.8); }
