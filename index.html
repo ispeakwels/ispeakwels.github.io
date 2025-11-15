@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ispeak</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!--
+<script>
+  const correctPassword = "Aai3";
+  const accessGranted = localStorage.getItem("accessGranted");
+
+  if (!accessGranted) {
+    const pw = prompt("Enter the access password:");
+    if (pw === correctPassword) {
+      localStorage.setItem("accessGranted", "true");
+      alert("Access granted ✅");
+    } else {
+      document.documentElement.innerHTML = `
+        <body>
+          <div style="font-family:Arial;padding:2rem;color:red;font-weight:bold;">
+            Access Denied ❌
+          </div>
+        </body>`;
+    }
+  }
+</script>-->
+
+
+</head>
+<body>
+  <div class="main-container d-flex flex-column justify-content-center align-items-center text-center">
+
+    <!-- Logo -->
+    <img src="ispeak2.jpg" onerror="src='ispeak2.jpg'" alt="ispeak logo" class="logo img-fluid mb-1" />
+
+    
+
+    <!-- I WANT TO LEARN -->
+    <div class="container mb-5">
+      <div class="grey-section">
+      <h5 id="learnTitle" class="topic mt-0" style="font-weight: bolder;"><b>LEARN</b></h5></div>
+
+   <!-- Row 1 -->
+      <div class="row align-items-start mt-3 fixed-row">
+        <div class="col-3"><a href="svo.html" class="circle-link"><div class="circle-num n1">1</div>Topic</a></div>
+        <div class="col-3"><a href="dsvo.html" class="circle-link"><div class="circle-num n2">2</div>Topic</a></div>
+        <div class="col-3"><a href="4svo.html" class="circle-link"><div class="circle-num n3">3</div>Topic</a></div>
+        <div class="col-3"><a href="5svo.html" class="circle-link"><div class="circle-num n4">4</div>Topic</a></div>
+      </div>
+
+      <!-- Row 2 -->
+       <div class="row align-items-start mt-3 fixed-row">
+        <div class="col-3"><a href="convo5.html" class="circle-link"><div class="circle-num n5">5</div>Topic</a></div>
+        <div class="col-3"><a href="convo6.html" class="circle-link"><div class="circle-num n6">6</div>Topic</a></div>
+        <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n7">7</div>Topic</a></div>
+        <div class="col-3 see-more" id="seeMoreLearn">
+          <div class="circle">+</div>See More
+        </div>
+      </div>
+
+      <!-- Hidden Learn extras -->
+      <div id="extraLearn" class="hidden mt-3">
+        <div class="row fixed-row">
+          <div class="col-3"><a href="convo8.html" class="circle-link"><div class="circle-num n8">8</div>Topic</a></div>
+          <div class="col-3"><a href="convo9.html" class="circle-link"><div class="circle-num n9">9</div>Topic</a></div>
+          <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n10">10</div>Topic</a></div>
+           <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n11">11</div><br>Topic</a></div>
+        </div>
+      </div>
+
+      <!-- I WANT TO SOLVE -->
+         <div class="grey-section">
+      <h5 id="solveTitle" class="topic mt-3" style="font-weight: bolder;"><b>SOLVE ASSIGNMENTS</b></h5></div>
+
+      <!-- Row 1 -->
+      <div class="row align-items-start mt-3 fixed-row">
+        <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n1">1</div>Topic</a></div>
+        <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n2">2</div>Topic</a></div>
+        <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n3">3</div>Topic</a></div>
+        <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n4">4</div>Topic</a></div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row align-items-start mt-3 fixed-row">
+        <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n5">5</div>Topic</a></div>
+        <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n6">6</div>Topic</a></div>
+        <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n7">7</div>Topic</a></div>
+        <div class="col-3 see-more" id="seeMoreSolve">
+          <div class="circle">+</div>See More
+        </div>
+      </div>
+
+      <!-- Hidden Solve extras -->
+      <div id="extraSolve" class="hidden mt-3 mb-5">
+        <div class="row fixed-row">
+          <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n8">8</div><br>Topic</a></div>
+          <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n9">9</div><br>Topic</a></div>
+          <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n10">10</div><br>Topic</a></div>
+          <div class="col-3"><a href="eng.html" class="circle-link"><div class="circle-num n11">11</div><br>Topic</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Partner Logos (Scrolling Right → Left) -->
+<div class="moving-container">
+  <div class="logo-track">
+    <img src="ise.jpg" onerror="src='ise.jpg'" alt="Moving" class="moving-img">
+    <img src="ise2.jpg" onerror="src='ise2.jpg'" alt="Moving" class="moving-img">
+    <img src="ise3.jpg" onerror="src='ise3.jpg'" alt="Moving" class="moving-img">
+  </div>
+</div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center mt-auto ">
+  <nav class="navbar fixed-bottom small-footer light-violet-bg">
+    <div class="container justify-content-center">
+      <a class="nav-link text-white px-2" style="font-size: 20px;" href="index.html"><b>Home</b></a>
+      <a class="nav-link text-white px-2" style="font-size: 20px;"href="about.html"><b>About</b></a>
+      <a class="nav-link text-white px-2" style="font-size: 20px;"href="https://maps.app.goo.gl/8ifYxVkVKe81SfEU8?g_st=aw"><b>Contact</b></a>
+       <a class="nav-link text-white px-2" style="font-size: 20px;" href="review.html"><b>Review</b></a>
+    </div>
+  </nav>
+</footer>
+
+  <script>
+    function toggleSection(buttonId, sectionId, titleId) {
+      const btn = document.getElementById(buttonId);
+      const section = document.getElementById(sectionId);
+      const title = document.getElementById(titleId);
+
+      btn.addEventListener("click", () => {
+        section.classList.toggle("hidden");
+        const icon = btn.querySelector(".circle");
+        icon.textContent = section.classList.contains("hidden") ? "+" : "−";
+
+        if (!section.classList.contains("hidden")) {
+          const y = title.getBoundingClientRect().top + window.scrollY - 60;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      });
+    }
+
+    toggleSection("seeMoreLearn", "extraLearn", "learnTitle");
+    toggleSection("seeMoreSolve", "extraSolve", "solveTitle");
+  </script>
+</body>
+</html>
